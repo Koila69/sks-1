@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title 'SylvainKomtet' %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    {% endblock %}
+
+
+</head>
+<body>
+
+<div id="social">
+    <a href="https://twitter.com/KokoSylvainC" onmouseover="this.style.color='#1DA1F2';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/sylvain.comtet"onmouseover="this.style.color='#3B5998';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.twitch.tv/koila69" onmouseover="this.style.color='#6441A4';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-twitch fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.snapchat.com/add/koila69" onmouseover="this.style.color='#FFFC01';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-snapchat fa-3x" aria-hidden="true"></i></a>
+                    <a href="http://www.viadeo.com/p/002yd8za4d4qreg" onmouseover="this.style.color='#FF971D';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-viadeo fa-3x" aria-hidden="true"></i></a>
+                        <a href="mailto:sylvain.comtet@gmail.com" onmouseover="this.style.color='#949794';" onmouseout="this.style.background='';this.style.color='';">
+                                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+
+</div>
+
+<div id="logo1"></div>
+
+<h1><a href="{{ path('homepage') }}">SylvainKomtet</a></h1>
+
+<div id="menu">
+    <li>
+        <a href="{{ path('homepage') }}">Menu</a>
+    </li>
+</div>
+<div id="content">
+
+    {% block content %}
+    {% endblock %}
+</div>
+
+<div id="footer">
+
+    {% block footer %}
+    {% endblock %}
+</div>
+</body>
+</html>

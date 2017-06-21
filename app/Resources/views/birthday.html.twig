@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+<h2>Les dix prochaines années, votre anniversaire sera un: </h2>
+    {% for year, day in weekdays %}
+            {{ year }} : {{ day }} <br>
+        {% endfor %}
+{% endblock %}
+
+    {% block footer %}
+    {% endblock %}
